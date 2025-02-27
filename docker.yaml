@@ -9,5 +9,7 @@ spec:
   - name: docker
     image: docker
     args: ["sleep", "10000"]
+  imagePullSecrets:
+    - name: regcred
   restartPolicy: Never
 

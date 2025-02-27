@@ -12,6 +12,8 @@ spec:
     volumeMounts:
     - mountPath: /var/run/docker.sock
       name: docker-socket
+  imagePullSecrets:
+    - name: regcred
   restartPolicy: Never
   volumes:
   - name: docker-socket
